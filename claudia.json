@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "parchment-executor",
+    "name": "parchment",
+    "region": "us-west-2"
+  },
+  "api": {
+    "id": "hy8szgr7z9"
+  }
+}
