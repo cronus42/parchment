@@ -23,5 +23,9 @@
   },
   "scripts": {
     "build": "grunt"
+  },
+  "dependencies": {
+    "compression": "^1.7.2",
+    "express": "^4.16.3"
   }
 }
