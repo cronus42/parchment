@@ -8,11 +8,11 @@ BSD licenced
 https://github.com/curiousdannii/parchment
 
 */
-
+var compression = require( 'compression' );
 var express = require( 'express' );
 var app = express();
 
-app.use( express.compress() );
+app.use( compression() );
 app.use( express.static( __dirname + '/../' ) );
 
 var port = process.env.PORT || 3000;
