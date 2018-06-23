@@ -5,6 +5,10 @@
 	<title>Parchment</title>
 	<script src="lib/jquery.min.js"></script>
 	<script src="lib/parchment.min.js"></script>
+	<script src="src/lib/class.js"></script>
+	<script src="src/lib/iff.js"></script>
+	<script src="src/parchment/file.js"></script>
+	<script src="tools/zcode2js.js"></script>
 	<link rel="stylesheet" href="lib/parchment.min.css">
 	<meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
@@ -13,6 +17,19 @@
 		<h1>Parchment</h1>
 		<p>is an interpreter for Interactive Fiction. <a href="https://github.com/curiousdannii/parchment">Find out more.</a></p>
 		<noscript><p>Parchment requires Javascript. Please enable it in your browser.</p></noscript>
+                <ul>
+                        <lh>Z-code games</lh>
+                        <li><a href="?story=stories/tcom.zblorb.js">The Colour of Magic</a></li>
+                        <li><a href="?story=stories/CAVERNS.Z5">Caverns of Chaos</a></li>
+                        <li><a href="?story=stories/curses.z5.js">CURSES</a></li>
+                        <li><a href="?story=stories/troll.z5.js">Troll</a></li>
+                </ul>
+	<p>Enter the URL of a <a href="https://github.com/jennielees/ChromeGrue/blob/master/zcode2js.py">zcode/jsonp story below</a></p>
+	<div class="input"><input id="url-entry" type="text" size="60"></div>
+	<div id="post-url-entry">
+		<p>The link for playing your story is:</p>
+		<p><a id="play-url"></a></p>
+	</div>
 	</div>
 	<div id="parchment" aria-live="polite" aria-atomic="false" aria-relevant="additions"></div>
 </body>
