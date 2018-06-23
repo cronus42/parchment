@@ -17,9 +17,8 @@ function _onFileUpload() {
 function _onUrlEntry() {
   if (this.value) {
     $("#post-url-entry").fadeIn();
-    var lastSlash = window.location.href.lastIndexOf("/");
-    var baseUrl = window.location.href.slice(0, lastSlash);
-    var finalUrl = baseUrl + "/parchment.html?story=" + escape(this.value);
+    var baseUrl = window.location.protocol + '//' + window.location.hostname;
+    var finalUrl = baseUrl + "?story=" + escape(this.value);
     $("#play-url").attr("href", finalUrl);
     $("#play-url").text(finalUrl);
   } else {
